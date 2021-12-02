@@ -1,0 +1,28 @@
+
+.userdetails{
+    width:50%;
+    margin:0px auto;
+}
+.rowdetails{
+    border:2px solid black;
+}
+.heading{
+    border:2px solid black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: antiquewhite;
+}
+.head{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: antiquewhite;
+}
+.mainimage{
+    width:50%;
+    height:auto;
+    text-align: center;
+    margin:0px auto;
+}
+.tabledata{
+    margin:0px auto;
+}

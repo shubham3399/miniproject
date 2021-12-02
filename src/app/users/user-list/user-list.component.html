@@ -1,0 +1,29 @@
+<div class="container searchbar">
+    <div class="row">
+        <div class="col-md-12">
+            <input type="text" placeholder="Search By Last Name" [(ngModel)]="filteredString">
+        </div>
+    </div>
+</div>
+<div class="userdetails">
+    <table>
+        <tr class="rowdetails">
+            <th class="heading">ID</th>
+            <th class="heading">Email</th>
+            <th class="heading">First Name</th>
+            <th class="heading">Last Name</th>
+            <th class="head">Avatar</th>
+            <th class="head"></th>
+        </tr>
+        <tr *ngFor="let user of userList | filter: filteredString">
+            <td class="heading">{{user.id}}</td>
+            <td class="heading" (click)="selectUser(user)"> {{user.email}}</td>
+            <td class="heading">{{user.first_name}}</td>
+            <td class="heading">{{user.last_name}}</td>
+            <td class="heading">{{user.avatar}}</td>
+            <td class="heading"><img (click)="reDirect('view',user.id)" [src]="user.avatar"></td>
+        </tr>
+    </table>
+
+    <app-adduser [selectedUser]="selectedUser" (updateUserList)="updateValue($event)"></app-adduser>
+</div>

@@ -1,0 +1,23 @@
+
+.layout{
+    margin:10px auto;
+    width:50%;
+    height:auto;
+    background-color: rgb(228, 228, 125);
+}
+
+input.ng-invalid{
+    border :3px solid red;
+}
+
+.error{
+    color:red;
+}
+.drop_down{
+    padding:5px;
+    width:100%;
+    border-radius:5px;
+}
+.form-check-input{
+    margin:0px;
+}

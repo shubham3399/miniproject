@@ -1,0 +1,26 @@
+<div class="layout" *ngIf="data?.selectedUser">
+    <form #editForm="ngForm">
+      <p>
+        <label for="firstname">First Name</label>
+        <br>
+        <input type="text" id="firstname" name="firstname" placeholder="FirstName"
+          [(ngModel)]="data.selectedUser.first_name">
+      </p>
+  
+      <p>
+        <label for="lastname">Last Name </label>
+        <br>
+        <input type="text" id="lastname" name="lastname" placeholder="LastName" [(ngModel)]="data.selectedUser.last_name">
+      </p>
+  
+      <p>
+        <label for="email">Email </label>
+        <br>
+        <input type="text" id="email" name="email" placeholder="Email" [(ngModel)]="data.selectedUser.email">
+      </p>
+      <p>
+        <button type="button" class="btn btn-success"  (click)="update()">Update</button>
+  
+      </p>
+    </form>
+  </div>

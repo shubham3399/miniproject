@@ -1,0 +1,28 @@
+<div class="container-fluid">
+  <nav class="navbar bg-secondary design">
+
+    <div class="row">
+      <div class="col-md-2">
+        <a class="detail" routerLink="homepage"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+      </div>
+      <div class="col-md-2">
+        <a class="detail" routerLink="signup"><i class="fa fa-user" aria-hidden="true"></i> SignUp</a>
+      </div>
+      <div class="col-md-2">
+        <a class="detail" routerLink="login"><i class="fa fa-sign-in" aria-hidden="true"></i> Login</a>
+      </div>
+      <div class="col-md-2">
+        <a class="detail" routerLink="userlist"><i class="fa fa-users" aria-hidden="true"></i> UserList</a>
+      </div>    
+      <div class="col-md-2">
+        <a class="detail" routerLink="component"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Subject</a>
+      </div> 
+    </div>
+
+  </nav>
+</div>
+
+
+<div [@routeAnimations]="prepareRoute(outlet)">
+  <router-outlet #outlet="outlet"></router-outlet>
+</div>

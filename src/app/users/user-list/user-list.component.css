@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+input{
+    width:50%;
+    padding:0px 0px 0px 15px;
+    outline: 0;
+}
+.userdetails{
+    width:50%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.rowdetails{
+    border:1px solid black;
+    outline:none;
+}
+
+.heading{
+    border:1px solid black;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: antiquewhite;
+}
+
+.head{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background: antiquewhite;
+}
+.searchbar{
+    text-align: center;
+    padding:10px;
+    margin:0px auto;
+}

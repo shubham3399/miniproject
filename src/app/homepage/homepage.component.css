@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.background{
+    margin:0px auto;
+    width:98%;
+}
+.backgroundimg{
+    width:100%;
+}
+@media (min-width:320px) and (max-width:720px){
+    .backgroundimg{
+        text-align: left;
+    }
+}

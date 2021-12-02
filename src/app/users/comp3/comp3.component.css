@@ -1,0 +1,10 @@
+.box{
+    text-align: center;
+    background-color: #ffdfe5;
+    border: 1px solid #ffb1bf;
+    border-radius: 6px;
+}
+input{
+    outline:none;
+    padding:0px 0px 0px 5px;
+}

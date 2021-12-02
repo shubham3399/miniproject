@@ -1,0 +1,10 @@
+
+.design{
+  display:block;
+}
+.detail{
+    text-decoration:wavy;
+    color:black;
+    font-size: 19px;
+    padding:10px;
+}
