@@ -15,6 +15,7 @@ import { Comp2Component } from './comp2/comp2.component';
 import { Comp3Component } from './comp3/comp3.component';
 
 
+
 @NgModule({
   declarations: [
     UsersComponent,
@@ -26,7 +27,7 @@ import { Comp3Component } from './comp3/comp3.component';
     FilterPipe,
     Comp1Component,
     Comp2Component,
-    Comp3Component
+    Comp3Component,
   ],
   exports: [
    UsersComponent,

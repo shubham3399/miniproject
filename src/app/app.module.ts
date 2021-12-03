@@ -8,10 +8,14 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { VerificationGuard } from './guards/verification.guard';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { TooltipComponent } from './tooltip/tooltip.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    TooltipComponent,
   ],
   imports: [
     BrowserModule,
@@ -19,7 +23,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HomepageModule,
     UsersModule,
     HttpClientModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
  
   providers: [

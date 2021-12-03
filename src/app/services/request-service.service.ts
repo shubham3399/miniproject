@@ -6,7 +6,7 @@ import { Subject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
-export class RequestServiceService {
+ export class RequestServiceService {
   static getToken() {
     throw new Error('Method not implemented.');
   }
@@ -18,7 +18,12 @@ export class RequestServiceService {
   private url = "https://reqres.in/api/";
 
   userName = new Subject<any>();
-
+  setUserName(userName:string){
+   this.userName.next(userName);
+  }
+  getUserName(){
+    this.userName.asObservable;
+  }
   getUsers(){
     return this.http.get(this.url + "users?page=2");
   }
