@@ -9,13 +9,9 @@ import { VerificationGuard } from './guards/verification.guard';
 import { TokenInterceptorService } from './services/token-interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToastrModule } from 'ngx-toastr';
-import { TooltipComponent } from './tooltip/tooltip.component';
-
-
 @NgModule({
   declarations: [
     AppComponent,
-    TooltipComponent,
   ],
   imports: [
     BrowserModule,
@@ -26,14 +22,14 @@ import { TooltipComponent } from './tooltip/tooltip.component';
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
   ],
- 
+
   providers: [
     VerificationGuard,
-  {
-   provide:HTTP_INTERCEPTORS,
-   useClass:TokenInterceptorService,
-   multi:true
-  }
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInterceptorService,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })
